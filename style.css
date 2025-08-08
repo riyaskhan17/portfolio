@@ -279,12 +279,11 @@ p {
 .contact-form textarea {
   padding: 12px;
   font-size: 16px;
-  border: 1px solid #ccc;
+  border: 1px solid#ccc;
   border-radius: 10px;
   background: var(--bg);
   color: var(--text);
 }
-
 .contact-form input:focus,
 .contact-form textarea:focus {
   outline: none;
