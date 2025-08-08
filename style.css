@@ -1,0 +1,358 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins',sans-serif;
+  box-sizing: border-box;
+  
+}
+
+body{
+  background: black;
+  color: #fff;
+}
+
+.container{
+  padding: 10px 10px;
+}
+
+/* for Logo */
+
+.logo{
+  height: 80px;
+  width: auto;
+}
+
+/* For navigation bar */
+
+nav{
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 10px;
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+  width: 100%;
+}
+
+/* For info intro section */
+
+.info{
+  padding-top: 15%;
+  padding-bottom: 15%;
+  padding-right: 40%;
+  font-weight: bold;
+}
+
+.info h1{
+  color: #fff;
+}
+
+.info h1{
+  letter-spacing: 1px;
+  line-height: 40px;
+
+}
+
+.info span{
+  color: rgb(230,104,59);
+}
+
+/* For hire section */
+
+.info a{
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: black;
+  background: salmon;
+  margin: 10px 0;
+  margin-left: 500px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  display: inline-block;
+  transition: .4s ease;
+}
+
+.info a:hover{
+  background: rgb(59,174,209);
+}
+
+/* For image section */
+
+
+.image{
+  position: absolute;
+  right: 80px;
+  top: 150px;
+  width: 300px;
+  height: 300px;
+} 
+
+.image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 50%;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+  transition: transform 0.4s ease;
+}
+
+
+.image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+} 
+
+
+
+
+/* For about section */
+
+.about-section {
+  padding: 100px ;
+  margin-top: 100px;
+  margin-bottom: 220px;
+  margin-right: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: slategray;
+}
+
+p {
+  font-size: 25px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.highlight {
+  color: rgb(230,104,59);
+  font-weight: bold;
+}
+
+
+
+/* For skills section */
+
+.skills-section {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 30px;
+  background: blue;
+  padding: 100px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: white;
+}
+
+.skill {
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.skill:hover {
+  transform: scale(1.03);
+}
+
+.skill-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+
+.percent {
+  font-size: 16px;
+  color: white;
+}
+
+
+.progress-bar {
+  background: #e0e0e0;
+  border-radius: 20px;
+
+  height: 20px;
+}
+
+.progress {
+  height: 100%;
+  width: 0;
+  border-radius: 20px;
+}
+
+
+.html {
+  background: #e44d26;
+}
+
+.css {
+  background: seagreen;
+}
+
+.js {
+  background: #f0db4f;
+}
+
+.python {
+  background: #0e63a8;
+}
+
+
+
+/* For Contact section */
+
+
+.contact-section {
+  max-width: 600px;
+  margin: 100px auto;
+  background: var(--card);
+  padding: 10px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px var(--shadow);
+}
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  color: var(--text);
+}
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.contact-form button {
+  padding: 12px 20px;
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #2b7cbf;
+}
+
+
+#formStatus {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+  color: green;
+}
+
+/* For social icons  */
+
+.social-icons {
+  display: flex;
+  gap: 30px;
+  padding-left: 83%;
+  margin:6px;
+  
+}
+
+.icon {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.icon:hover {
+  transform: scale(1.2);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.instagram {
+  background: radial-gradient(circle at 30% 30%, #feda75, #d62976, #962fbf);
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+
